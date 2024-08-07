@@ -1,0 +1,40 @@
+{
+    "docs": [
+        {
+            "name": "TalTech HPC Centre User Guides",
+            "url": "https://hpc.pages.taltech.ee/",
+            "category": "docs",
+            "tag": "personal",
+            "icon": "fa-bookmark",
+            "description": "Guides on how to use the HPC resources"
+        },
+        {
+            "name": "LUMI User Guides",
+            "url": "https://docs.lumi-supercomputer.eu/",
+            "category": "docs",
+            "tag": "personal",
+            "icon": "fa-bookmark",
+            "description": "Guides on how to use LUMI resources"
+        }
+    ],
+    "infos": [
+        {
+            "name": "Official TalTech HPC Centre introduction",
+            "url": "https://docs.lumi-supercomputer.eu/",
+            "category": "intro",
+            "tag": "personal",
+            "icon": "fa-bookmark",
+            "description": "TalTech's introduction to what we do and some info about our infrastructure"
+        }
+    ],
+    "helps": [
+        {
+            "name": "Helpdesk Portal",
+            "url": "https://helpdesk.taltech.ee/plugins/servlet/theme/portal/13/create/271",
+            "category": "intro",
+            "tag": "personal",
+            "icon": "fa-bookmark",
+            "description": "TalTech's introduction to what we do and some info about our infrastructure"
+        }
+    ]
+}

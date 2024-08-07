@@ -1,0 +1,50 @@
+---
+layout: "base-layout.html"
+title: "Home | TalTech HPC Centre"
+description: "TalTech HPC Centre landing page"
+---
+
+<div class="plane-middle">
+    <p>Taltech High Performance Computing Centre (HPC Centre) develops and manages the compute resources for scientific
+        use.</p>
+
+    <hr>
+
+    <h5>Info</h5>
+    <ul>
+        {% for item in homelinks.infos %}
+        <li>
+            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+                {{item.name}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h5>Help</h5>
+    <ul>
+        <li>
+            <a href="mailto:{{contacts.email}}">
+                Support email
+            </a>
+        </li>
+        {% for item in homelinks.helps %}
+        <li>
+            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+                {{item.name}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h5>Documentation</h5>
+    <ul>
+        {% for item in homelinks.docs %}
+        <li>
+            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+                {{item.name}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
