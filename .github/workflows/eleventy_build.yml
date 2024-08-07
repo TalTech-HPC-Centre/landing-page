@@ -14,10 +14,9 @@ jobs:
           node-version: 20
       - name: Build
         run: |
-          npm install -g @11ty/eleventy @divriots/jampack --unsafe-perm
+          npm install -g @11ty/eleventy --unsafe-perm
           npm install
           eleventy
-          #npx @divriots/jampack public
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
