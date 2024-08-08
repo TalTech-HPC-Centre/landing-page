@@ -23,6 +23,12 @@
     ],
     "helps": [
         {
+            "name": "Support Email",
+            "url": "mailto:hpcsupport@taltech.ee",
+            "icon": "fa-bookmark",
+            "description": "HPC Centre support email"
+        },
+        {
             "name": "Helpdesk Portal",
             "url": "https://taltech.atlassian.net/servicedesk/customer/portal/18/create/228",
             "icon": "fa-bookmark",
