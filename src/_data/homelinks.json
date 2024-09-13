@@ -2,7 +2,7 @@
     "docs": [
         {
             "name": "TalTech HPC Centre User Guides",
-            "url": "https://hpc.pages.taltech.ee/",
+            "url": "https://docs.hpc.taltech.ee/",
             "icon": "fa-bookmark",
             "description": "Guides on how to use the HPC resources"
         },
