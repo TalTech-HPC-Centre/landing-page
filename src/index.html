@@ -8,9 +8,19 @@ description: "TalTech HPC Centre landing page"
     <p style="font-weight:400;">Taltech High Performance Computing Centre (HPC Centre) develops and manages the compute resources for scientific
         use.</p>
 
-    <hr style="margin-top: 50px; margin-bottom: 50px;">
+    <h5 style="margin-top: 40px;">Services</h5>
+    <ul>
+        {% for item in homelinks.services %}
+        <li>
+            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+                {{item.name}}
+            </a>
+                - {{item.description}}
+        </li>
+        {% endfor %}
+    </ul>
 
-    <h5>Info</h5>
+    <h5 style="margin-top: 40px;">Info</h5>
     <ul>
         {% for item in homelinks.infos %}
         <li>
@@ -21,18 +31,19 @@ description: "TalTech HPC Centre landing page"
         {% endfor %}
     </ul>
 
-    <h5>Help</h5>
+    <h5 style="margin-top: 40px;">Help</h5>
     <ul>
         {% for item in homelinks.helps %}
         <li>
             <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
             </a>
+                - {{item.description}}
         </li>
         {% endfor %}
     </ul>
 
-    <h5>Documentation</h5>
+    <h5 style="margin-top: 40px;">Documentation</h5>
     <ul>
         {% for item in homelinks.docs %}
         <li>

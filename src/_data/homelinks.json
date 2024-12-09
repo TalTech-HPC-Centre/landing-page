@@ -4,13 +4,13 @@
             "name": "TalTech HPC Centre User Guides",
             "url": "https://docs.hpc.taltech.ee/",
             "icon": "fa-bookmark",
-            "description": "Guides on how to use the HPC resources"
+            "description": "Guides on how to use the HPC resources."
         },
         {
             "name": "LUMI User Guides",
             "url": "https://docs.lumi-supercomputer.eu/",
             "icon": "fa-bookmark",
-            "description": "Guides on how to use LUMI resources"
+            "description": "Guides on how to use LUMI resources."
         }
     ],
     "infos": [
@@ -18,21 +18,35 @@
             "name": "Official TalTech HPC Centre introduction",
             "url": "https://taltech.ee/en/itcollege/hpc-centre",
             "icon": "fa-bookmark",
-            "description": "TalTech's introduction to what we do and some info about our infrastructure"
+            "description": "TalTech's introduction to what we do and some info about our infrastructure."
         }
     ],
     "helps": [
         {
-            "name": "Support Email",
-            "url": "mailto:hpcsupport@taltech.ee",
-            "icon": "fa-bookmark",
-            "description": "HPC Centre support email"
-        },
-        {
-            "name": "Helpdesk Portal",
+            "name": "Helpdesk Portal Ticket to HPC Centre",
             "url": "https://taltech.atlassian.net/servicedesk/customer/portal/18/create/228",
             "icon": "fa-bookmark",
-            "description": "TalTech's helpdesk portal form to HPC Centre"
+            "description": "Contact here to become our user!"
+        },
+        {
+            "name": "hpcsupport@taltech.ee",
+            "url": "mailto:hpcsupport@taltech.ee",
+            "icon": "fa-bookmark",
+            "description": "HPC Centre support email."
+        }
+    ],
+    "services": [
+        {
+            "name": "ondemand.hpc.taltech.ee",
+            "url": "https://ondemand.hpc.taltech.ee/",
+            "icon": "fa-bookmark",
+            "description": "Access TalTech HPC Centre cluster resources from the browser!"
+        },
+        {
+            "name": "base.hpc.taltech.ee",
+            "url": "https://base.hpc.taltech.ee",
+            "icon": "fa-bookmark",
+            "description": "TalTech HPC Centre service uptime graphs. Same hostname used for SSH access!"
         }
     ]
 }
