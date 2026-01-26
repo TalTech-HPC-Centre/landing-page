@@ -45,7 +45,7 @@
         {
             "name": "base.hpc.taltech.ee",
             "url": "https://base.hpc.taltech.ee",
-            "image": "/uptime-logo.png",
+            "image": "/uptime-icon.svg",
             "description": "TalTech HPC Centre service uptime graphs. Same hostname used for SSH access!"
         }
     ]
