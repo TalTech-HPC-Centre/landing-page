@@ -7,29 +7,27 @@
 </head>
 
 <body>
-	<div class="foreground">
-		<div class="container">
+	<!-- <div class="foreground"> -->
+		<!-- <div class="container"> -->
 			<div class="header">
 				<img src="android-chrome-192x192.png" alt="TalTech logo" style="margin-left: auto; margin-right: auto; width: 120px;">
 				<!--
 				<h1>TalTech HPC Centre</h1>
 				-->
-				<div class="headerlinks">
+				<!-- <div class="headerlinks">
 					<p>
-						<!--
 						<a href="/">home</a>
 						<a href="{{ links.docs }}">docs</a>
-					    -->
 						{% block headerlinks %}{% endblock %}
 					</p>
-				</div>
+				</div> -->
 			</div>
-		</div>
+		<!-- </div> -->
 		<main>
-			<div class="container">
+			<!-- <div class="container"> -->
 				{% block title %}{% endblock %}
 				{{ content | safe }}
-			</div>
+			<!-- </div> -->
 		</main>
 		{% block comments %}{% endblock %}
 		<!-- <div class="container">
@@ -39,8 +37,8 @@
 				</p>
 			</div>
 		</div> -->
-		<div class="foreground-noise foreground-noise-more"></div>
-	</div>
+		<!-- <div class="foreground-noise foreground-noise-more"></div>
+	</div> -->
 </body>
 
 
