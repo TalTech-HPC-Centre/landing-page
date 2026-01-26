@@ -67,7 +67,7 @@ div.mainpage-category-item {
     box-sizing: border-box;
     padding: 0.5rem;
 }
-div.mainpage-category-item h2 {
+div.mainpage-category-item h1 {
     font-family: var(--secondary-font);
     font-weight: bold;
     font-size: 220%;
@@ -80,6 +80,8 @@ div.mainpage-category-item p {
     font-size: 110%;
     margin-top: 10%;
     margin-bottom: 0%;
+    min-width: fit-content;
+    max-width: min-content;
 }
 div.mainpage-category-item img {
     /* Don't force a fixed height — constrain instead so natural ratio is preserved */
