@@ -6,7 +6,7 @@ description: "TalTech HPC Centre landing page"
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 <div class="plane-middle">
-    <p style="font-weight:400;">Taltech High Performance Computing Centre (HPC Centre) develops and manages the compute resources for scientific
+    <p style="font-weight:400;text-align: center;">Taltech High Performance Computing Centre (HPC Centre) develops and manages the compute resources for scientific
         use.</p>
 
     <h1 class="mainpage-category-header">Services</h1>
@@ -16,7 +16,9 @@ description: "TalTech HPC Centre landing page"
             <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
             </a></h2>
-            <img src="{{item.image}}" alt="{{item.name}} image" style="max-width: 200px; display: block; margin-top: 10px; margin-bottom: 10px;">
+            <div class="image-wrapper">
+                <img src="{{item.image}}" alt="{{item.name}} image" />
+            </div>
             <p>{{item.description}}</p>
         </div class="mainpage-category-item">
         {% endfor %}
