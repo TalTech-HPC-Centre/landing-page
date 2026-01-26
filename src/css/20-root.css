@@ -30,9 +30,9 @@
     recursive & monospace
     */
     --logo-font: sans-serif;
-    --main-font: sans-serif;
-    --secondary-font: sans-serif;
-    --tertiary-font: sans-serif;
+    --main-font: "ProximaNovaBlack", sans-serif;
+    --secondary-font: "ProximaNovaLight", sans-serif;
+    --tertiary-font: "ProximaNovaLight", sans-serif;
 
     --main-color: var(--eerie-black);
     --main-accent-color: var(--davys-gray);
@@ -40,6 +40,21 @@
     --secondary-accent-color: white;
     --tertiary-color: var(--taltech-blue);
     --tertiary-accent-color: var(--taltech-blue-darker);
+}
+
+/* font-family: "ProximaNovaBlack"; */
+@font-face {
+    font-family: "ProximaNovaBlack";
+    src: url("../fonts/Proxima Nova Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: bold;
+}
+/* font-family: "ProximaNovaLight"; */
+@font-face {
+    font-family: "ProximaNovaLight";
+    src: url("../fonts/Proxima Nova Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: lighter;
 }
 
 /* Table of contents

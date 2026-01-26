@@ -1,8 +1,16 @@
+/* font-family: "ProximaNovaBlack"; */
+@font-face {
+    font-family: "ProximaNovaBlack";
+    src: url("../fonts/Proxima Nova Black.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
 h1.mainpage-category-header {
+    font-family: var(--secondary-font);
     text-align: center;
     text-justify: center;
     font-size: 3.5rem;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 div.mainpage-category {
@@ -44,6 +52,7 @@ div.mainpage-category-item {
     padding: 0.5rem;
 }
 div.mainpage-category-item h2 {
+    font-family: var(--main-font);
     font-size: 220%;
     margin-top: 5%;
     margin-bottom: 5%;
