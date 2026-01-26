@@ -23,8 +23,8 @@ div.mainpage-category-item {
     border-radius: 5%;
     padding: 1%;
     border-width: 2px;
-    background-color: #342c61;
-    background-image: linear-gradient(25deg,#e40d7e,#e40d7e 6%,#342c61);
+    background-color: #342c6130;
+    background-image: linear-gradient(25deg,#e40d7e30,#e40d7e30 6%,#342c6130);
     border-color: transparent;
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
     transition: 0.3s;
