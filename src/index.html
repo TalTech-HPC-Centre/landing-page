@@ -4,6 +4,7 @@ title: "Home | TalTech HPC Centre"
 description: "TalTech HPC Centre landing page"
 ---
 
+<link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/v4-font-face.css" rel="stylesheet">
 <div class="plane-middle">
     <p style="font-weight:400;">Taltech High Performance Computing Centre (HPC Centre) develops and manages the compute resources for scientific
         use.</p>
@@ -22,36 +23,41 @@ description: "TalTech HPC Centre landing page"
     </div>
 
     <h1 class="mainpage-category-header">Info</h1>
-    <ul>
+    <div class="mainpage-category">
         {% for item in homelinks.infos %}
-        <li>
-            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+        <div class="mainpage-category-item">
+            <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
-            </a>
-        </li>
+            </a></h2>
+            <i class="{{item.icon}}"></i>
+            <p>{{item.description}}</p>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 
     <h1 class="mainpage-category-header">Help</h1>
-    <ul>
+    <div class="mainpage-category">
         {% for item in homelinks.helps %}
-        <li>
-            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+        <div class="mainpage-category-item">
+            <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
-            </a>
-                - {{item.description}}
-        </li>
+            </a></h2>
+            <i class="{{item.icon}}"></i>
+            <p>{{item.description}}</p>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 
     <h1 class="mainpage-category-header">Documentation</h1>
-    <ul>
+    <div class="mainpage-category">
         {% for item in homelinks.docs %}
-        <li>
-            <a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
+        <div class="mainpage-category-item">
+            <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
-            </a>
-        </li>
+            </a></h2>
+            <i class="{{item.icon}}"></i>
+            <p>{{item.description}}</p>
+        </div>
         {% endfor %}
-    </ul>
+    </div>
 </div>
