@@ -1,5 +1,6 @@
 @import url('./10-reset.css');
 @import url('./20-root.css');
+@import url('./30-mainpage.css');
 
 .emote {
     vertical-align: middle;

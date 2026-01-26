@@ -39,13 +39,13 @@
         {
             "name": "ondemand.hpc.taltech.ee",
             "url": "https://ondemand.hpc.taltech.ee/",
-            "icon": "fa-bookmark",
+            "image": "/ood-logo.png",
             "description": "Access TalTech HPC Centre cluster resources from the browser!"
         },
         {
             "name": "base.hpc.taltech.ee",
             "url": "https://base.hpc.taltech.ee",
-            "icon": "fa-bookmark",
+            "image": "/uptime-logo.png",
             "description": "TalTech HPC Centre service uptime graphs. Same hostname used for SSH access!"
         }
     ]
