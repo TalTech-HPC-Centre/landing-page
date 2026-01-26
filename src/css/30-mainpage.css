@@ -37,3 +37,8 @@ div.mainpage-category-item img {
     justify-self: center;
     margin: auto;
 }
+
+i.big-icon {
+    font-size: 3rem;
+    margin-top: 15px;
+}

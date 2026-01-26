@@ -22,14 +22,14 @@ description: "TalTech HPC Centre landing page"
         {% endfor %}
     </div>
 
-    <h1 class="mainpage-category-header">Info</h1>
+    <h1 class="mainpage-category-header">About</h1>
     <div class="mainpage-category">
         {% for item in homelinks.infos %}
         <div class="mainpage-category-item">
             <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
             </a></h2>
-            <i class="{{item.icon}}"></i>
+            <i class="{{item.icon}} big-icon"></i>
             <p>{{item.description}}</p>
         </div>
         {% endfor %}
@@ -42,7 +42,7 @@ description: "TalTech HPC Centre landing page"
             <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
             </a></h2>
-            <i class="{{item.icon}}"></i>
+            <i class="{{item.icon}} big-icon"></i>
             <p>{{item.description}}</p>
         </div>
         {% endfor %}
@@ -55,7 +55,7 @@ description: "TalTech HPC Centre landing page"
             <h2><a href="{{item.url}}" target="_blank" rel="noopener noreferrer">
                 {{item.name}}
             </a></h2>
-            <i class="{{item.icon}}"></i>
+            <i class="{{item.icon}} big-icon"></i>
             <p>{{item.description}}</p>
         </div>
         {% endfor %}
