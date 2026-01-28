@@ -89,7 +89,7 @@ section.full-width a.button {
     }
 }
 
-div.services-container {
+div.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -99,7 +99,7 @@ div.services-container {
     max-width: 90vw;
     overflow-x: scroll;
 }
-div.services-container div.service-card {
+div.container div.service-card {
     background-color: var(--taltech-blue-dark);
     padding: 1em;
     margin: 1em;
@@ -109,7 +109,7 @@ div.services-container div.service-card {
     text-align: center;
     min-width: 400px;
 }
-div.services-container div.service-card a.service-link {
+div.container div.service-card a.service-link {
     display: block;
     font-family: var(--secondary-font);
     font-size: 1.3em;
@@ -117,18 +117,24 @@ div.services-container div.service-card a.service-link {
     color: white;
     text-decoration: none;
 }
-div.services-container div.service-card a.service-link:hover {
+div.container div.service-card a.service-link:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
 }
-div.services-container div.service-card img {
+div.container div.service-card img {
     width: auto;
     height: 50%;
     border-radius: 5px;
     margin-bottom: 0.5em;
     margin-top: 0.5em;
 }
-div.services-container div.service-card p {
+div.container div.service-card i.fa-solid {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+div.container div.service-card p {
     font-family: var(--tertiary-font);
     font-size: 1em;
     color: white;
@@ -136,12 +142,12 @@ div.services-container div.service-card p {
     margin-bottom: 0;
 }
 @media (max-width: 768px) {
-    div.services-container {
+    div.container {
         flex-direction: column;
         align-items: center;
         height: fit-content;
     }
-    div.services-container div.service-card {
+    div.container div.service-card {
         width: 80vw;
         margin: 1em 0;
         height: fit-content;
