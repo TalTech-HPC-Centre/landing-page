@@ -43,6 +43,7 @@
     --secondary-accent-color: white;
     --tertiary-color: var(--taltech-blue);
     --tertiary-accent-color: var(--taltech-blue-darker);
+    --taltech-gradient: linear-gradient(25deg, #e40d7e, #e40d7e 6%, #342c61);
 }
 
 /* font-family: "ProximaNovaBlack"; */
