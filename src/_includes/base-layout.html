@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	{% include "head.html" %}
-	{% block head %}{% endblock %}
-</head>
-
-<body>
-	<header class="header">
-		<img src="android-chrome-192x192.png" alt="TalTech logo" style="margin-left: auto; margin-right: auto; width: 120px;">
-		<!--
-		<h1>TalTech HPC Centre</h1>
-		-->
-		<!-- <div class="headerlinks">
-			<p>
-				<a href="/">home</a>
-				<a href="{{ links.docs }}">docs</a>
-				{% block headerlinks %}{% endblock %}
-			</p>
-		</div> -->
-	</header>
-	<main>
-		<!-- <div class="container"> -->
+	<head>
+		{% include "head.html" %}
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		<header class="layout-header">
+			<img src="android-chrome-192x192.png" alt="TalTech logo">
+			<div class="navbar-vertical">
+				<h1><a href="{{ site.baseurl }}/">TalTech HPC Centre</a></h1>
+				<nav class="main-navbar">
+					{% for item in homelinks.docs %}
+					<a href="{{ item.url }}">{{ item.name.replace('TalTech HPC', '') }}</a>
+					{% endfor %}
+					{% for item in homelinks.infos %}
+					<a href="{{ item.url }}">{{ item.name.replace('TalTech HPC', '') }}</a>
+					{% endfor %}
+					{% for item in homelinks.services %}
+					<a href="{{ item.url }}">{{ item.name.replace('.hpc.taltech.ee', '') }}</a>
+					{% endfor %}
+				</nav>
+			</div>
+		</header>
+		<main>
 			{% block title %}{% endblock %}
 			{{ content | safe }}
-		<!-- </div> -->
-	</main>
-	{% block comments %}{% endblock %}
-</body>
-
-
+		</main>
+		{% block comments %}{% endblock %}
+	</body>
 </html>
