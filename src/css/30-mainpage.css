@@ -1,101 +1,149 @@
-/* font-family: "ProximaNovaBlack"; */
-@font-face {
-    font-family: "ProximaNovaBlack";
-    src: url("../fonts/Proxima Nova Black.ttf") format("truetype");
-    font-style: normal;
-    font-weight: normal;
+section.side {
+    margin: auto;
+    margin-top: 2em;
+    max-width: 70vw;
+    padding: 2%;
+    background-color: var(--taltech-blue);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+section h2 {
+    font-size: 1.8em;
+    font-family: var(--primary-font);
+    padding: 1%;
+    padding-left: 0;
+    margin: 0;
+}
+section p {
+    font-size: 1.1em;
+    font-family: var(--secondary-font);
+    justify-self: auto;
+    text-justify: newspaper;
+}
+section a.button {
+    margin: auto;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--taltech-pink);
+    color: white;
+    /* text-decoration: underline; */
+    font-family: var(--tertiary-font);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-div.plane-middle {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    padding-top: 10px;
-    width: 100%;
-    background-color: rgb(29, 22, 22);
-    /* background-image: linear-gradient(180deg,#e40d7e,#e40d7e 6%,#342c61); */
+section.side.left {
+    text-align: left;
+    justify-content: left;
+    margin-left: 0;
+    border-radius: 0 10px 10px 0;
 }
-p.mainpage-sentence {
-    font-family: var(--secondary-font);
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    margin-top: 0;
-    font-weight: normal;
+section.side.right {
+    text-align: right;
+    justify-content: right;
+    margin-right: 0;
+    border-radius: 10px 0 0 10px;
+}
+
+section.full-width {
+    margin: auto;
+    margin-top: 2em;
+    padding: 2%;
+    background-color: var(--taltech-blue);
+}
+section.full-width h2 {
+    font-size: 1.8em;
+    font-family: var(--primary-font);
+    padding: 1%;
+    padding-left: 0;
+    margin: 0;
     text-align: center;
 }
-h1.mainpage-category-header {
+section.full-width p {
+    font-size: 1.1em;
     font-family: var(--secondary-font);
+    justify-self: auto;
+    text-justify: newspaper;
     text-align: center;
-    text-justify: center;
-    font-size: 3.5rem;
-    margin-bottom: 20px;
 }
-div.mainpage-category {
+section.full-width a.button {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--taltech-pink);
+    color: white;
+    width: fit-content;
+    max-width: fit-content;
+    font-family: var(--tertiary-font);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+    section.side, section.full-width {
+        max-width: 90vw;
+        border-radius: 10px;
+        text-align: center;
+    }
+    section.side.left, section.side.right {
+        border-radius: 10px;
+    }
+}
+
+div.services-container {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
-    justify-content: center;
-    margin-top: 20px;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: auto;
+    margin-top: 2em;
+    max-width: 90vw;
+    overflow-x: scroll;
 }
-div.mainpage-category-item {
-    border-radius: 8px;
-    max-width: calc(50% - 1rem);
+div.services-container div.service-card {
+    background-color: var(--taltech-blue-dark);
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    flex: 1;
     text-align: center;
-    align-content: center;
-    justify-content: center;
-    margin-bottom: 3%;
-
-    border-radius: 5%;
-    padding: 1%;
-    border-width: 2px;
-    border-color: transparent;
-    background-color: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.5);
-    transition: 0.3s;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    min-width: 400px;
 }
-/* new: fixed image area so all cards keep same visual height while images keep aspect ratio */
-.image-wrapper {
-    width: 100%;
-    height: 30vh;        /* consistent visual height for all items */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0.5rem;
-}
-div.mainpage-category-item h1 {
-    font-family: var(--secondary-font);
-    font-weight: bold;
-    font-size: 220%;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-div.mainpage-category-item p {
-    font-family: var(--tertiary-font);
-    font-weight: lighter;
-    font-size: 110%;
-    margin-top: 10%;
-    margin-bottom: 0%;
-    min-width: fit-content;
-    max-width: min-content;
-}
-div.mainpage-category-item img {
-    /* Don't force a fixed height — constrain instead so natural ratio is preserved */
-    max-height: 100%;
-    min-height: 90%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    border-radius: 4px;
+div.services-container div.service-card a.service-link {
     display: block;
-    margin: 0 auto;
+    font-family: var(--secondary-font);
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+    color: white;
+    text-decoration: none;
 }
-
-i.big-icon {
-    font-size: 10rem;
+div.services-container div.service-card a.service-link:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+}
+div.services-container div.service-card img {
+    width: auto;
+    height: 50%;
+    border-radius: 5px;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+div.services-container div.service-card p {
+    font-family: var(--tertiary-font);
+    font-size: 1em;
+    color: white;
+    text-justify: newspaper;
+    margin-bottom: 0;
+}
+@media (max-width: 768px) {
+    div.services-container {
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+    div.services-container div.service-card {
+        width: 80vw;
+        margin: 1em 0;
+        height: fit-content;
+    }
 }
