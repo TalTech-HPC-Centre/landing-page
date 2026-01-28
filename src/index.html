@@ -14,11 +14,11 @@ description: "TalTech HPC Centre landing page"
     <p>LUMI is one of the most powerful supercomputers in the world, located in Finland.<br> It is part of the EuroHPC Joint Undertaking and provides cutting-edge computational capabilities for researchers across Europe.</p>
     <a href="https://lumi-supercomputer.eu/" class="button" target="_blank">Learn More About LUMI</a>
 </section>
-<hr>
+
 {% for doc in homelinks.docs %}
 <section class="full-width">
     <h2>Get Started with {{ doc.name.replace(' User Guides', '') }}</h2>
-    <p>Explore the {{ doc.name }} and resources to get started with high-performance computing.</p>
     <a href="{{ doc.url }}" class="button">{% if doc.icon %}<i class="{{ doc.icon }}"></i>  {% endif %}Explore {{ doc.name }}</a>
+    <p>{{ doc.description }}</p>
 </section>
 {% endfor %}

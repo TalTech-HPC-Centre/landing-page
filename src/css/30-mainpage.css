@@ -20,8 +20,6 @@ section p {
     text-justify: newspaper;
 }
 section a.button {
-    align-self: center;
-    justify-self: center;
     margin: auto;
     margin-top: 1em;
     padding: 0.5em 1em;
@@ -67,4 +65,26 @@ section.full-width p {
     text-justify: newspaper;
     text-align: center;
 }
-
+section.full-width a.button {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: var(--taltech-pink);
+    color: white;
+    width: fit-content;
+    max-width: fit-content;
+    font-family: var(--tertiary-font);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+    section.side, section.full-width {
+        max-width: 90vw;
+        border-radius: 10px;
+        text-align: center;
+    }
+    section.side.left, section.side.right {
+        border-radius: 10px;
+    }
+}
