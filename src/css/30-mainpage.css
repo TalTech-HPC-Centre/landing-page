@@ -4,20 +4,22 @@ section.home-intro {
     margin: auto;
     margin-top: 2em;
     margin-left: 0;
-    max-width: 800px;
+    max-width: 70vw;
     padding: 2%;
     background-color: var(--taltech-blue);
     border-radius: 0 10px 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
-section.home-intro h2 {
+section h2 {
     font-size: 1.8em;
+    font-family: var(--primary-font);
     padding: 1%;
     padding-left: 0;
     margin: 0;
 }
-section.home-intro p {
+section p {
     font-size: 1.1em;
+    font-family: var(--secondary-font);
 }
 
 section.home-lumi {
@@ -26,7 +28,7 @@ section.home-lumi {
     margin: auto;
     margin-top: 2em;
     margin-right: 0;
-    max-width: 800px;
+    max-width: 70vw;
     padding: 2%;
     background-color: var(--taltech-blue);
     border-radius: 10px 0 0 10px;
