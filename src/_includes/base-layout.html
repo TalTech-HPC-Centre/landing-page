@@ -44,13 +44,12 @@
         }
         if (title) title.style.display = scrolled ? "block" : "none";
         if (navLinks) navLinks.forEach(link => {
-            link.style.fontSize = scrolled ? "1.2em" : "1.5em";
+            link.style.fontSize = scrolled ? "1em" : "1.2em";
 			link.style.marginTop = scrolled ? "0" : "5px";
 			link.style.marginBottom = scrolled ? "0" : "5px";
 			link.style.paddingTop = scrolled ? "0" : "5px";
 			link.style.paddingBottom = scrolled ? "0" : "5px";
 			link.style.transition = "all 0.3s ease";
-			link.style.paddingLeft = scrolled ? "10px" : "15px";
 			link.style.paddingRight = scrolled ? "10px" : "15px";
         });
 		if (logo) logo.style.height = scrolled ? "100%" : "120px";
