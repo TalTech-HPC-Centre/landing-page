@@ -1,13 +1,9 @@
-section.home-intro {
-    text-align: left;
-    justify-content: left;
+section {
     margin: auto;
     margin-top: 2em;
-    margin-left: 0;
     max-width: 70vw;
     padding: 2%;
     background-color: var(--taltech-blue);
-    border-radius: 0 10px 10px 0;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
 section h2 {
@@ -20,17 +16,19 @@ section h2 {
 section p {
     font-size: 1.1em;
     font-family: var(--secondary-font);
+    justify-self: auto;
+    text-justify: newspaper;
 }
 
-section.home-lumi {
+section.left {
+    text-align: left;
+    justify-content: left;
+    margin-left: 0;
+    border-radius: 0 10px 10px 0;
+}
+section.right {
     text-align: right;
     justify-content: right;
-    margin: auto;
-    margin-top: 2em;
     margin-right: 0;
-    max-width: 70vw;
-    padding: 2%;
-    background-color: var(--taltech-blue);
     border-radius: 10px 0 0 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
