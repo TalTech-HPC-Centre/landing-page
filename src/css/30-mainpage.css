@@ -100,7 +100,7 @@ div.services-container {
     overflow-x: scroll;
 }
 div.services-container div.service-card {
-    background-color: var(--taltech-burgundy);
+    background-color: var(--taltech-blue-dark);
     padding: 1em;
     margin: 1em;
     border-radius: 10px;

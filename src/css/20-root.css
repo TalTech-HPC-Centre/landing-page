@@ -20,14 +20,14 @@
     --system-white: #c5d9d5;
     --taltech-blue: #4dbcd0;
     --taltech-blue-darker: #499baa;
-    --taltech-darkblue: #342c61;
+    --taltech-blue-dark: #342c61;
     --taltech-pink: #e40d7e;
     --taltech-pink-light: #e40d7e80;
     --taltech-purple: #342c61;
     --taltech-grey: #9396b0;
     --taltech-grey-light: #dadae4;
     --taltech-burgundy: #aa1352;
-    --taltech-gradient: linear-gradient(25deg, #e40d7e, #e40d7e 6%, #342c61);
+    --taltech-gradient: linear-gradient(calc(180deg + 25deg), var(--taltech-blue), var(--taltech-blue) 6%, #342c61);
 
     --base-font-size: 1.6em;
     /* Good pairs: 
