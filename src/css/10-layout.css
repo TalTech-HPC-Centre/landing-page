@@ -38,3 +38,12 @@ body > header.layout-header nav a:hover {
     text-decoration: underline;
     text-decoration-thickness: 4px;
 }
+
+body > main.layout-main {
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 4vh;
+    background-color: gainsboro;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
