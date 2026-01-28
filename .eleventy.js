@@ -9,7 +9,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/*.svg");
     eleventyConfig.addPassthroughCopy("./src/site.webmanifest");
     eleventyConfig.addPassthroughCopy("./src/css");
-    eleventyConfig.addPassthroughCopy("./src/fonts");
     //eleventyConfig.addPassthroughCopy("./src/fonts");
     //eleventyConfig.addPassthroughCopy("./src/static");
     return {
