@@ -20,14 +20,17 @@ section p {
     text-justify: newspaper;
 }
 section a.button {
-    display: inline-block;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
     margin-top: 1em;
     padding: 0.5em 1em;
     background-color: var(--taltech-pink);
     color: white;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     font-family: var(--tertiary-font);
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 section.side.left {
