@@ -67,7 +67,7 @@ body > main.layout-main {
 body > footer.layout-footer {
     margin: 0;
     padding: 0;
-    background-color: var(--taltech-darkblue);
+    background-color: var(--taltech-blue-dark);
     color: white;
     text-align: center;
     font-family: var(--secondary-font);

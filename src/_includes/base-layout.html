@@ -8,7 +8,7 @@
 		<header class="layout-header">
 			<img src="android-chrome-192x192.png" alt="TalTech logo">
 			<div class="navbar-vertical">
-				<h1><a href="{{ site.baseurl }}/">TalTech HPC Centre</a></h1>
+				<h1 id="taltech-hpc-title"><a href="{{ site.baseurl }}/">TalTech HPC Centre</a></h1>
 				<nav class="main-navbar">
 					{% for item in homelinks.docs %}
 					<a href="{{ item.url }}">{{ item.name.replace('TalTech HPC', '') }}</a>
@@ -29,6 +29,38 @@
 		<footer class="layout-footer">
 			<p>&copy; TalTech HPC Centre. All rights reserved.</p>
 		</footer>
+		<script type="text/javascript">
+(function() {
+    const updateHeader = () => {
+        const header = document.querySelector(".layout-header");
+        const title = document.querySelector("h1#taltech-hpc-title");
+        const navLinks = document.querySelectorAll(".main-navbar a");
+		const logo = document.querySelector(".layout-header img");
+        const scrolled = window.scrollY < 1;
+
+        if (header) {
+            header.style.backgroundColor = scrolled ? "var(--taltech-blue-dark)" : "transparent";
+            header.style.boxShadow = scrolled ? "0 2px 5px rgba(0, 0, 0, 0.1)" : "none";
+        }
+        if (title) title.style.display = scrolled ? "block" : "none";
+        if (navLinks) navLinks.forEach(link => {
+            link.style.fontSize = scrolled ? "1.2em" : "1.5em";
+			link.style.marginTop = scrolled ? "0" : "5px";
+			link.style.marginBottom = scrolled ? "0" : "5px";
+			link.style.paddingTop = scrolled ? "0" : "5px";
+			link.style.paddingBottom = scrolled ? "0" : "5px";
+			link.style.transition = "all 0.3s ease";
+			link.style.paddingLeft = scrolled ? "10px" : "15px";
+			link.style.paddingRight = scrolled ? "10px" : "15px";
+        });
+		if (logo) logo.style.height = scrolled ? "100%" : "120px";
+    };
+
+    window.addEventListener("scroll", updateHeader);
+    window.addEventListener("DOMContentLoaded", updateHeader);
+    updateHeader();
+})();
+</script>
 		{% block comments %}{% endblock %}
 	</body>
 </html>
