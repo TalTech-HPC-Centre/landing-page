@@ -99,6 +99,7 @@ div.container {
     margin-top: 2em;
     max-width: 90vw;
     overflow-x: scroll;
+    scrollbar-width: none;
 }
 div.container div.service-card {
     background-color: var(--taltech-blue-dark);
