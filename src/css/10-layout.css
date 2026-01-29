@@ -61,43 +61,45 @@ body > header.layout-header nav a:hover {
     text-decoration-thickness: 4px;
 }
 
-/* Compress header on scroll */
-body > header.layout-header:not(.at-top) {
-    display: block;
-    align-content: center;
-    justify-content: center;
-    transition: all 220ms ease;
-}
-body > header.layout-header:not(.at-top) h1, body > header.layout-header:not(.at-top) h1 a {
-    display: none;
-    margin: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-body > header.layout-header:not(.at-top) img {
-    height: var(--nav-logo-height);
-    display: none;
-}
-body > header.layout-header.at-top img {
-    height: var(--nav-logo-height-large);
-}
-body > header.layout-header:not(.at-top) div.navbar-vertical {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-body > header.layout-header:not(.at-top) nav {
-    align-content: center;
-    justify-content: space-between;
-    gap: 3vw;
-    max-height: fit-content;
-    margin: 0;
-    flex-wrap: wrap;
-}
-body > header.layout-header:not(.at-top) nav a {
-    font-size: var(--bigger-font-size);
-    line-height: calc(var(--bigger-font-size) / 2);
-    text-wrap: wrap;
+@media (min-width: 769px) {
+    /* Compress header on scroll */
+    body > header.layout-header:not(.at-top) {
+        display: block;
+        align-content: center;
+        justify-content: center;
+        transition: all 220ms ease;
+    }
+    body > header.layout-header:not(.at-top) h1, body > header.layout-header:not(.at-top) h1 a {
+        display: none;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    body > header.layout-header:not(.at-top) img {
+        height: var(--nav-logo-height);
+        display: none;
+    }
+    body > header.layout-header.at-top img {
+        height: var(--nav-logo-height-large);
+    }
+    body > header.layout-header:not(.at-top) div.navbar-vertical {
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+    body > header.layout-header:not(.at-top) nav {
+        align-content: center;
+        justify-content: space-between;
+        gap: 3vw;
+        max-height: fit-content;
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    body > header.layout-header:not(.at-top) nav a {
+        font-size: var(--bigger-font-size);
+        line-height: calc(var(--bigger-font-size) / 2);
+        text-wrap: wrap;
+    }
 }
 
 body > main.layout-main {
@@ -128,6 +130,16 @@ body > footer.layout-footer p {
 
 @media (max-width: 768px) {
     body > header.layout-header.at-top, body > header.layout-header:not(.at-top) {
+        align-content: center;
+        justify-content: center;
+    }
+    body > header.layout-header.at-top img, body > header.layout-header:not(.at-top) img {
+        display: none;
+    }
+    body > header.layout-header.at-top h1,
+    body > header.layout-header.at-top h1 a,
+    body > header.layout-header:not(.at-top) h1,
+    body > header.layout-header:not(.at-top) h1 a {
         display: none;
     }
 }
