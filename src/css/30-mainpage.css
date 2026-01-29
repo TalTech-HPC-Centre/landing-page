@@ -151,5 +151,9 @@ div.container div.service-card p {
         width: 80vw;
         margin: 1em 0;
         height: fit-content;
+        min-height: 350px;
+    }
+    div.container div.service-card.contact {
+        min-height: 200px;
     }
 }

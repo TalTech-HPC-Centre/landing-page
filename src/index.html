@@ -52,7 +52,7 @@ description: "TalTech HPC Centre landing page"
     <h2>Contact Us</h2>
     <div class="container">
         {% for info in homelinks.helps %}
-        <div class="service-card">
+        <div class="service-card contact">
             <a class="service-link" href="{{ info.url }}">{{ info.name }}</a>
             {% if info.icon %}
                 <i class="{{ info.icon }}"></i>
