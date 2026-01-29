@@ -4,11 +4,12 @@ section.side {
     max-width: 70vw;
     padding: 2%;
     background-color: var(--taltech-blue);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9); */
 }
 section h2 {
     font-size: 1.8em;
     font-family: var(--primary-font);
+    color: white;
     padding: 1%;
     padding-left: 0;
     margin: 0;
