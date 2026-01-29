@@ -125,3 +125,9 @@ body > footer.layout-footer p {
     padding-bottom: 0;
     font-size: 0.9em;
 }
+
+@media (max-width: 768px) {
+    body > header.layout-header.at-top, body > header.layout-header:not(.at-top) {
+        display: none;
+    }
+}
