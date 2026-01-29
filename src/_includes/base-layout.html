@@ -30,36 +30,25 @@
 			<p>&copy; TalTech HPC Centre. All rights reserved.</p>
 		</footer>
 		<script type="text/javascript">
-(function() {
-    const updateHeader = () => {
-        const header = document.querySelector(".layout-header");
-        const title = document.querySelector("h1#taltech-hpc-title");
-        const navLinks = document.querySelectorAll(".main-navbar a");
-		const logo = document.querySelector(".layout-header img");
-        const scrolled = window.scrollY < 1;
+		(function() {
+			const header = document.querySelector(".layout-header");
+			// toggle a class instead of applying lots of inline styles
+			const updateHeader = () => {
+				const atTop = window.scrollY < 10;
+				if (header) header.classList.toggle("at-top", atTop);
+			};
 
-        if (header) {
-            header.style.backgroundColor = scrolled ? "var(--taltech-blue-dark)" : "transparent";
-            header.style.boxShadow = scrolled ? "0 2px 5px rgba(0, 0, 0, 0.1)" : "none";
-        }
-        if (title) title.style.display = scrolled ? "block" : "none";
-        if (navLinks) navLinks.forEach(link => {
-            link.style.fontSize = scrolled ? "1em" : "1.2em";
-			link.style.marginTop = scrolled ? "0" : "5px";
-			link.style.marginBottom = scrolled ? "0" : "5px";
-			link.style.paddingTop = scrolled ? "0" : "5px";
-			link.style.paddingBottom = scrolled ? "0" : "5px";
-			link.style.transition = "all 0.3s ease";
-			link.style.paddingRight = scrolled ? "10px" : "15px";
-        });
-		if (logo) logo.style.height = scrolled ? "auto" : "120px";
-    };
-
-    window.addEventListener("scroll", updateHeader);
-    window.addEventListener("DOMContentLoaded", updateHeader);
-    updateHeader();
-})();
-</script>
+			// debounce scroll handler
+			let t;
+			window.addEventListener("scroll", () => {
+				clearTimeout(t);
+				t = setTimeout(updateHeader, 50);
+			});
+			window.addEventListener("DOMContentLoaded", updateHeader);
+			window.addEventListener("resize", updateHeader);
+			updateHeader();
+		})();
+		</script>
 		{% block comments %}{% endblock %}
 	</body>
 </html>
