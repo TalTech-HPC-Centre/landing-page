@@ -2,6 +2,12 @@
 
 Landing page is built using 11ty SSG.
 
+## Instructions
+
+```bash
+mise run
+```
+
 ## References
 
 - [11ty](https://www.11ty.dev/)

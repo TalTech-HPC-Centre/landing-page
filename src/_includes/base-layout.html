@@ -1,47 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	{% include "head.html" %}
-	{% block head %}{% endblock %}
-</head>
-
-<body>
-	<div class="foreground">
-		<div class="container">
-			<div class="header">
-				<img src="android-chrome-192x192.png" alt="TalTech logo" style="margin-left: auto; margin-right: auto; width: 120px;">
-				<!--
-				<h1>TalTech HPC Centre</h1>
-				-->
-				<div class="headerlinks">
-					<p>
-						<!--
-						<a href="/">home</a>
-						<a href="{{ links.docs }}">docs</a>
-					    -->
-						{% block headerlinks %}{% endblock %}
-					</p>
-				</div>
+	<head>
+		{% include "head.html" %}
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		<header class="layout-header">
+			<img src="android-chrome-192x192.png" alt="TalTech logo">
+			<div class="navbar-vertical">
+				<h1 id="taltech-hpc-title"><a href="{{ site.baseurl }}/">TalTech HPC Centre</a></h1>
+				<nav class="main-navbar">
+					{% for item in homelinks.docs %}
+					<a href="{{ item.url }}">{{ item.name.replace('TalTech HPC', '') }}</a>
+					{% endfor %}
+					{% for item in homelinks.infos %}
+					<a href="{{ item.url }}">{{ item.name.replace('TalTech HPC', '') }}</a>
+					{% endfor %}
+					{% for item in homelinks.services %}
+					<a href="{{ item.url }}">{{ item.name.replace('.hpc.taltech.ee', '') }}</a>
+					{% endfor %}
+				</nav>
 			</div>
-		</div>
-		<main>
-			<div class="container">
-				{% block title %}{% endblock %}
-				{{ content | safe }}
-			</div>
+		</header>
+		<main class="layout-main">
+			{% block title %}{% endblock %}
+			{{ content | safe }}
 		</main>
+		<footer class="layout-footer">
+			<p>&copy; TalTech HPC Centre. All rights reserved.</p>
+		</footer>
+		<script type="text/javascript">
+		(function() {
+			const header = document.querySelector(".layout-header");
+			// toggle a class instead of applying lots of inline styles
+			const updateHeader = () => {
+				const atTop = window.scrollY < 10;
+				if (header) header.classList.toggle("at-top", atTop);
+			};
+
+			// debounce scroll handler
+			let t;
+			window.addEventListener("scroll", () => {
+				clearTimeout(t);
+				t = setTimeout(updateHeader, 50);
+			});
+			window.addEventListener("DOMContentLoaded", updateHeader);
+			window.addEventListener("resize", updateHeader);
+			updateHeader();
+		})();
+		</script>
 		{% block comments %}{% endblock %}
-		<div class="container">
-			<div class="footer">
-				<p class="footer-p">
-					TalTech HPC Centre
-				</p>
-			</div>
-		</div>
-		<div class="foreground-noise foreground-noise-more"></div>
-	</div>
-</body>
-
-
+	</body>
 </html>
