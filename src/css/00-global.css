@@ -30,6 +30,12 @@ div.foreground {
     padding: 0;
 }
 
+div.header > img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
 main > div.container {
     padding: 0;
     margin: 0 auto;
@@ -52,6 +58,7 @@ div.header {
     background-image: var(--taltech-gradient);
     margin-left: 0;
     margin-right: 0;
+    margin: 0;
     width: 100%;
 }
 
