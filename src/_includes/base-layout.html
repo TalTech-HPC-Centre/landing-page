@@ -7,39 +7,33 @@
 </head>
 
 <body>
-	<div class="foreground">
-		<div class="container">
-			<div class="header">
-				<img src="android-chrome-192x192.png" alt="TalTech logo" style="margin-left: auto; margin-right: auto; width: 120px;">
-				<!--
-				<h1>TalTech HPC Centre</h1>
-				-->
-				<div class="headerlinks">
-					<p>
-						<!--
-						<a href="/">home</a>
-						<a href="{{ links.docs }}">docs</a>
-					    -->
-						{% block headerlinks %}{% endblock %}
-					</p>
-				</div>
-			</div>
-		</div>
-		<main>
-			<div class="container">
-				{% block title %}{% endblock %}
-				{{ content | safe }}
-			</div>
-		</main>
-		{% block comments %}{% endblock %}
-		<div class="container">
-			<div class="footer">
-				<p class="footer-p">
-					TalTech HPC Centre
+	<div class="container">
+		<div class="header">
+			<img src="favicon.svg" alt="TalTech logo">
+			<div class="headerlinks">
+				<p>
+					<!--
+					<a href="/">home</a>
+					<a href="{{ links.docs }}">docs</a>
+					-->
+					{% block headerlinks %}{% endblock %}
 				</p>
 			</div>
 		</div>
-		<div class="foreground-noise foreground-noise-more"></div>
+	</div>
+	<main>
+		<div class="container">
+			{% block title %}{% endblock %}
+			{{ content | safe }}
+		</div>
+	</main>
+	{% block comments %}{% endblock %}
+	<div class="container">
+		<div class="footer">
+			<p class="footer">
+				&copy; TalTech HPC Centre. All rights reserved.
+			</p>
+		</div>
 	</div>
 </body>
 
