@@ -14,17 +14,18 @@ ul li a:hover {
 ul li p {
     display: inline;
     margin: 0;
-    font-family: var(--secondary-font);
+    font-family: var(--tertiary-font);
     font-size: larger;
     font-weight: 400;
     color: var(--taltech-grey);
+    color: #000000;
 }
 ul li {
     margin-bottom: 10px;
-    list-style: circle green;
+    list-style: circle;
 }
 ul li::marker {
-    color: var(--taltech-pink);
+    color: var(--taltech-grey);
 }
 
 h5.section-header {
