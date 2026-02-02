@@ -1,0 +1,45 @@
+ul li a {
+    text-decoration: none;
+    color: var(--taltech-blue-dark);
+    font-family: var(--secondary-font);
+    font-weight: bolder;
+    font-size: larger;
+}
+ul li a:hover {
+    color: var(--taltech-pink);
+    /* text-decoration: underline; */
+    font-weight: bolder;
+}
+
+ul li p {
+    display: inline;
+    margin: 0;
+    font-family: var(--secondary-font);
+    font-size: larger;
+    font-weight: 400;
+    color: var(--taltech-grey);
+}
+ul li {
+    margin-bottom: 10px;
+    list-style: circle green;
+}
+ul li::marker {
+    color: var(--taltech-pink);
+}
+
+h5.section-header {
+    color: var(--taltech-pink);
+    font-family: var(--main-font);
+    font-size: 3.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+p.intro {
+    font-family: var(--secondary-font);
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--taltech-grey);
+    color: #000000;
+    margin-bottom: 30px;
+}
