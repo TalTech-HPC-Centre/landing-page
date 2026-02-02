@@ -22,10 +22,11 @@ ul li p {
 }
 ul li {
     margin-bottom: 10px;
-    list-style: circle;
+    list-style-position: inside;
 }
 ul li::marker {
-    color: var(--taltech-grey);
+    color: var(--taltech-burgundy);
+    /* content: "•  "; */
 }
 
 h5.section-header {
