@@ -4,11 +4,12 @@
 
 body {
     display: flex;
+    flex-direction: column;
     font-family: var(--primary-font);
     font-size: var(--base-font-size);
     color: var(--text-color);
     /* background-color: var(--taltech-burgundy); */
-    background-color: var(--taltech-grey);
+    background-color: var(--taltech-grey-light);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -21,8 +22,9 @@ div.foreground {
     background-color: var(--taltech-grey-light);
 }
 
-div.foreground > div.container {
+/* div.foreground >  */ div.container {
     width: 100%;
+    max-width: none;
     margin: 0;
     padding: 0;
 }
@@ -31,7 +33,18 @@ main > div.container {
     padding: 0;
     margin: 0 auto;
     max-width: 1200px;
-    width: 85%;
+    width: 60%;
+}
+
+@media (max-width: 1200px) {
+    main > div.container {
+        width: 80%;
+    }
+}
+@media (max-width: 768px) {
+    main > div.container {
+        width: 95%;
+    }
 }
 
 div.header {
