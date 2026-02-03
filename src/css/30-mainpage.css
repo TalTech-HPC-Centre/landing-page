@@ -35,6 +35,7 @@ h5.section-header {
     font-size: 3.5rem;
     font-weight: 900;
     text-transform: uppercase;
+    margin-top: 30px;
 }
 
 p.intro {
@@ -44,4 +45,5 @@ p.intro {
     color: var(--taltech-grey);
     color: #000000;
     margin-bottom: 30px;
+    margin-top: 30px;
 }

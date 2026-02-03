@@ -5,7 +5,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     font-family: var(--primary-font);
     font-size: var(--base-font-size);
     color: var(--text-color);
@@ -15,6 +14,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+div.page-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 div.foreground {
@@ -98,15 +102,14 @@ div.header {
 /* Footer */
 div.footer {
     background-image: var(--taltech-gradient);
-    margin: 0;
-    display: flex;
-    height: min-content;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     justify-content: center;
-    align-self: flex-end;
-    /* space-between; */
     font-family: var(--tertiary-font);
     font-size: 1.7rem;
     font-weight: 500;
+    padding: 1rem 0 1rem 0;
 }
 
 @media (min-width: 1200px) {

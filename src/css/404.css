@@ -2,6 +2,41 @@
 /* Text in the middle of the page */
 .middletext {
     font-family: var(--tertiary-font);
-    margin-top: 15rem;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+h2 {
+    font-size: 4.5rem;
+    color: var(--taltech-pink);
+    font-family: var(--secondary-font);
+    font-weight: bolder;
+}
+
+p {
+    text-decoration: none;
+    color: var(--taltech-blue-dark);
+    font-family: var(--main-font);
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header,
+.footer {
+    flex-shrink: 0;
+    padding: 20rem;
+}
+
+.middletext {
+    flex: 1;
 }
